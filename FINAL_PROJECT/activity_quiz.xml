@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/quiz_gradient">
+
+    <TextView
+        android:id="@+id/question_block"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Position of question\nPosition of question\nPosition of question\nPosition of question"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:layout_marginTop="120dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    
+    <LinearLayout
+        android:id="@+id/progress_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/question_block"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical">
+
+        <ProgressBar
+            android:id="@+id/progression_vw"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="10"
+            android:progress="0"
+            android:minHeight="30dp"
+            android:indeterminate="false"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_marginHorizontal="24dp"
+            />
+        
+        <TextView
+            android:id="@+id/progression_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0/10"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:layout_marginEnd="24dp"/>
+
+    </LinearLayout>
+
+    
+    <TextView
+        android:id="@+id/button1"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:background="@drawable/default_variant"
+        android:textColor="#354DCF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Variant 1"
+        app:layout_constraintTop_toBottomOf="@id/progress_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/button2"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:background="@drawable/default_variant"
+        android:textColor="#354DCF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Variant 2"
+        app:layout_constraintTop_toBottomOf="@id/button1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/button3"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:background="@drawable/default_variant"
+        android:textColor="#354DCF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Variant 3"
+        app:layout_constraintTop_toBottomOf="@id/button2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/button4"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:background="@drawable/default_variant"
+        android:textColor="#354DCF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Variant 4"
+        app:layout_constraintTop_toBottomOf="@id/button3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        />
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#00BCD4"
+        app:layout_constraintTop_toBottomOf="@id/button4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Submit"/>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
