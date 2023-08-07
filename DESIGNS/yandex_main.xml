@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0f0f0f"
+    tools:context=".MainActivity"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:id="@+id/header_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#181818"
+        android:gravity="left|center"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="10dp">
+
+
+        <ImageView
+            android:id="@+id/person_icon"
+            android:layout_width="32dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/yandex_header_person"
+            />
+
+        <ImageView
+            android:id="@+id/settings_icon"
+            android:layout_width="28dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="24dp"
+            android:src="@drawable/yandex_header_settings"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingTop="14dp"
+            android:text="Коллекция"
+            android:fontFamily="sans-serif-thin"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginStart="65dp"
+            android:textAlignment="center"
+            android:textColor="#eeeeee"
+            />
+
+        <ImageView
+            android:id="@+id/search_icon"
+            android:layout_width="32dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/yandex_header_search"
+            android:layout_marginStart="95dp"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/love_pic"
+        android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_height="100dp"
+        android:gravity="left|center"
+        android:orientation="horizontal"
+        android:paddingEnd="16dp">
+
+        <ImageView
+            android:id="@+id/pink_front"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/yandex_bg_pink" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignStart="@id/pink_front"
+            android:layout_alignBottom="@id/pink_front"
+            android:src="@drawable/yandex_heart" />
+
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:src="@drawable/yandex_love_small"
+            android:layout_alignEnd="@id/pink_front"
+            android:layout_alignBottom="@id/pink_front"
+            android:layout_marginBottom="4dp"
+            android:layout_marginEnd="4dp"/>
+
+        <TextView
+            android:id="@+id/textView_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/pink_front"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginTop="40dp"
+            android:text="Мне нравится"
+            android:textColor="#eeeeee"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/pink_front"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginTop="60dp"
+            android:text="15 треков"
+            android:textColor="#8d8d8d"
+            android:textSize="12sp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Треки"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#eeeeee"
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:drawableStart="@drawable/yandex_tracks_icon"
+        android:layout_marginStart="10dp"
+        android:drawablePadding="10dp"
+        android:drawableEnd="@drawable/yandex_arrow"
+        android:layout_marginEnd="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Альбомы"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#eeeeee"
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:drawableStart="@drawable/yandex_album_icon"
+        android:layout_marginStart="10dp"
+        android:drawablePadding="10dp"
+        android:drawableEnd="@drawable/yandex_arrow"
+        android:layout_marginEnd="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Исполнители"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#eeeeee"
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:drawableStart="@drawable/yandex_singer_icon"
+        android:layout_marginStart="10dp"
+        android:drawablePadding="10dp"
+        android:drawableEnd="@drawable/yandex_arrow"
+        android:layout_marginEnd="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Плейлисты"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#eeeeee"
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:drawableStart="@drawable/yandex_playlist_icon"
+        android:layout_marginStart="10dp"
+        android:drawablePadding="10dp"
+        android:drawableEnd="@drawable/yandex_arrow"
+        android:layout_marginEnd="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Подкасты и книги"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#eeeeee"
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:drawableStart="@drawable/yandex_podcast_icon"
+        android:layout_marginStart="10dp"
+        android:drawablePadding="10dp"
+        android:drawableEnd="@drawable/yandex_arrow"
+        android:layout_marginEnd="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Скачанные треки"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#eeeeee"
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:drawableStart="@drawable/yandex_download_icon"
+        android:layout_marginStart="10dp"
+        android:drawablePadding="10dp"
+        android:drawableEnd="@drawable/yandex_arrow"
+        android:layout_marginEnd="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:text="Вы недавно слушали"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#eeeeee"
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:layout_marginStart="10dp"
+
+    <RelativeLayout
+        android:id="@+id/music_bar"
+        android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_height="100dp"
+        android:gravity="left|center"
+        android:orientation="horizontal"
+        android:paddingEnd="12dp">
+
+        <ImageView
+            android:id="@+id/album_pic"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/yandex_pic_album" />
+
+        <TextView
+            android:id="@+id/album_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/album_pic"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginTop="20dp"
+            android:text="What's Poppin"
+            android:textColor="#eeeeee"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/album_pic"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="8dp"
+            android:text="Harrison, SEBASTIEN DIOR"
+            android:textColor="#8d8d8d"
+            android:drawableEnd="@drawable/yandex_dots_pic"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/album_pic"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginTop="65dp"
+            android:text="2022 • сингл"
+            android:textColor="#8d8d8d"
+            android:textSize="12sp"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="140dp"
+        android:layout_height="1dp"
+        android:background="#9b9b9b"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#333333"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/bottom_toolbar">
+
+        <ImageView
+            android:id="@+id/serdechko"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/yandex_bottom_love"
+            android:layout_marginStart="16dp"/>
+
+        <TextView
+            android:id="@+id/bottom_big_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/serdechko"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="16dp"
+            android:text="Super Gremlin (David Guetta Trap Ho..."
+            android:textColor="#eeeeee"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-light" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bottom_big_text"
+            android:layout_marginStart="16dp"
+            android:text="Kodak Black, David Guetta"
+            android:textColor="#8d8d8d"
+            android:fontFamily="sans-serif-light"
+            android:textSize="12sp"
+            android:layout_toEndOf="@id/serdechko"/>
+
+        <ImageView
+            android:id="@+id/bottom_bluetooth"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@id/bottom_big_text"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/yandex_bottom_bluetooth"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/yandex_bottom_play"
+            android:layout_toEndOf="@id/bottom_bluetooth"
+            android:layout_marginStart="16dp"
+            
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#1c1c1c"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/yandex_below_music"
+            android:layout_weight="1"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/yandex_below_mic"
+            android:layout_weight="1"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/yandex_below_heart"
+            android:layout_weight="1"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
